@@ -3,8 +3,7 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import Home from "./Home/Home"
 import Game from "./Game/Game"
