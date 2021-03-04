@@ -1,0 +1,35 @@
+.container{
+    background: url("https://cdnb.artstation.com/p/assets/images/images/007/920/741/large/mikhail-emelianov-bg-slav-color-2-3.jpg?1509369224");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.start-button{
+    margin-bottom: 20vh;
+    background: url("https://i.pinimg.com/originals/c7/4b/52/c74b52a1647cc080e3857a100222544c.jpg") no-repeat;
+    background-size: cover;
+    color: #2E293B;
+    font-size: 7vw;
+    font-family: 'Dancing Script', cursive;
+    padding: 1vw 5vw;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 3px #CBDBF5;
+    cursor: pointer;
+
+    &:hover{
+        box-shadow: 0px 0px 3px 10px #CBDBF5;
+        color: #CBDBF5;
+        transition: ease-in-out all 0.5s;
+    }
+
+    &:active{
+        box-shadow: none;
+    }
+}
