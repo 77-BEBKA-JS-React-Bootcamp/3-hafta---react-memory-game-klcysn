@@ -7,12 +7,14 @@ import {
   Link
 } from "react-router-dom";
 import Home from "./Home/Home"
+import Game from "./Game/Game"
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/" component={Home} />  
+        <Route path="/" component={Home} exact />  
+        <Route path="/game" component={Game} />  
       </Switch>
   </Router>
   )

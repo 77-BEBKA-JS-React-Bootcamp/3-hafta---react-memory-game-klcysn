@@ -1,4 +1,4 @@
-.container{
+.home-container{
     background: url("https://cdnb.artstation.com/p/assets/images/images/007/920/741/large/mikhail-emelianov-bg-slav-color-2-3.jpg?1509369224");
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,4 +32,40 @@
     &:active{
         box-shadow: none;
     }
+}
+
+.username-picker{
+    width: 50%;
+    height: 40vh;
+    background-color: #132B59;
+    position: absolute;
+    top: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.username-input{
+    width: 50%;
+    padding: 1vw;
+    margin-bottom: 5px;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-size: 2vw;
+    font-family: 'Dancing Script', cursive;
+}
+
+.ok-button{
+    width: 50%;
+    padding: 1vw;
+    margin-bottom: 5px;
+    outline: none;
+    border: none;
+    font-family: 'Dancing Script', cursive;
+    color: #2E293B;
+    font-size: 1.5vw;
+    box-sizing: border-box;
+    cursor: pointer;
 }
