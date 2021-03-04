@@ -1,0 +1,24 @@
+.card-image{
+    width:11vw;
+    height:32vh;
+    cursor: pointer;
+    // transition: ease-in-out all 3s;
+
+    &:hover{
+        box-shadow: 0px 0px 2px 5px #CBDBF5;
+        animation: card-hover 0.1s;
+    }
+
+    &:active{
+        animation: card-open 0.5s;
+    }
+}
+
+@keyframes card-open{
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(360deg);}
+}
+@keyframes card-hover{
+    from {transform: rotateZ(-5deg);}
+    to {transform: rotateZ(5deg);}
+}
