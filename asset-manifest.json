@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/3-hafta---react-memory-game-klcysn/static/css/main.98153425.chunk.css",
+    "main.js": "/3-hafta---react-memory-game-klcysn/static/js/main.83498462.chunk.js",
+    "main.js.map": "/3-hafta---react-memory-game-klcysn/static/js/main.83498462.chunk.js.map",
+    "runtime-main.js": "/3-hafta---react-memory-game-klcysn/static/js/runtime-main.d3991cc2.js",
+    "runtime-main.js.map": "/3-hafta---react-memory-game-klcysn/static/js/runtime-main.d3991cc2.js.map",
+    "static/js/2.fdca2a0a.chunk.js": "/3-hafta---react-memory-game-klcysn/static/js/2.fdca2a0a.chunk.js",
+    "static/js/2.fdca2a0a.chunk.js.map": "/3-hafta---react-memory-game-klcysn/static/js/2.fdca2a0a.chunk.js.map",
+    "static/js/3.fbd20611.chunk.js": "/3-hafta---react-memory-game-klcysn/static/js/3.fbd20611.chunk.js",
+    "static/js/3.fbd20611.chunk.js.map": "/3-hafta---react-memory-game-klcysn/static/js/3.fbd20611.chunk.js.map",
+    "index.html": "/3-hafta---react-memory-game-klcysn/index.html",
+    "static/css/main.98153425.chunk.css.map": "/3-hafta---react-memory-game-klcysn/static/css/main.98153425.chunk.css.map",
+    "static/js/2.fdca2a0a.chunk.js.LICENSE.txt": "/3-hafta---react-memory-game-klcysn/static/js/2.fdca2a0a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d3991cc2.js",
+    "static/js/2.fdca2a0a.chunk.js",
+    "static/css/main.98153425.chunk.css",
+    "static/js/main.83498462.chunk.js"
+  ]
+}
