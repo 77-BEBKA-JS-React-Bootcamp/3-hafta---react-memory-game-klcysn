@@ -10,8 +10,7 @@ export default class Game extends React.Component{
         openedCards: [],
         firstCard: false,
         secondCard: false,
-        rights: 20
-      
+        isOpened: false
     }
     componentDidMount(){
         this.setState({index: this.state.index.sort((a,b)=> 0.5 - Math.random())})
@@ -29,16 +28,16 @@ export default class Game extends React.Component{
                 
             }
         }
-        this.setState({rights: this.state.rights - 1})
+        console.log(this.state.firstCard)
+        console.log(this.state.secondCard)
+        // this.setState({isOpened:`/assets/${i}.png`})
     }
-
-    handleAgainButtonClick =(username)=> document.location.reload()
     render(){
         const {username} =this.props.location.state
         console.log(this.state.openedCards)
         return(
             <div className="game-container">
-                <p className="game-username">{username.toUpperCase()} <br/> You have {this.state.rights} rights</p>
+                <p className="game-username">{username.toUpperCase()}</p>
                 <div className="cards-container">
                     {this.state.index.map((i, indx)=>
                     this.state.openedCards.includes(i)
@@ -49,16 +48,13 @@ export default class Game extends React.Component{
                     key={indx}
                     src={this.state.firstCard[0] === indx || this.state.secondCard[0] === indx ? `/assets/${i}.png` : "/assets/back.png"}/>)}
                 </div>
-                {(this.state.openedCards.length === 6 || this.state.rights === 0)
-                &&
                 <div className="snackbar-container">
                     <div className="snackbar">
-                        {this.state.openedCards.length === 6 && <p className="snackbar-text">You Won <b>{username}</b></p>}
-                        {(this.state.rights === 0 && this.state.openedCards.length !== 6) && <p className="snackbar-text">You Lost <b>{username}</b></p>}
+                        <p className="snackbar-text">You Lost <b>{username}</b></p>
                         <p className="snackbar-text">Let's play again!</p>
-                        <button onClick={()=>this.handleAgainButtonClick(username)} className="snackbar-button">again</button>
+                        <button className="snackbar-button">again</button>
                     </div>
-                </div>}
+                </div>
             </div>
         )
     }
