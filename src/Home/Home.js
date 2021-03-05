@@ -11,7 +11,6 @@ class Home extends React.Component{
     handleInputChange = (event) => this.setState({username: event.target.value})
     handleOkButtonClick = () =>this.state.username === "" ? null : this.props.history.push({pathname:"/game", state:{username:this.state.username}})
     render(){
-
         return(
             <div className="home-container" >
                 <button onClick={this.handleStartButtonClick} className="start-button">Start Game</button>
