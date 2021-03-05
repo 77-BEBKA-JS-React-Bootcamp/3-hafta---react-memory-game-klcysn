@@ -1,4 +1,5 @@
 {
+  "homepage": "https://77-bebka-js-react-bootcamp.github.io/3-hafta---react-memory-game-klcysn/",
   "name": "3-hafta---react-memory-game-klcysn",
   "version": "0.1.0",
   "private": true,
@@ -14,6 +15,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
